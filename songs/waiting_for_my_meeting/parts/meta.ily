@@ -34,6 +34,10 @@
 
 \gridPutMusic "meta" 8 {
   s1*8 \break
-  s1*8 \break
+  s1*8 \noBreak
+}
+
+\gridPutMusic "meta" 9 {
+  s1
   \bar "|."
 }

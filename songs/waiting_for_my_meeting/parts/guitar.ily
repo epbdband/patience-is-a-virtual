@@ -39,3 +39,7 @@
 \gridPutMusic "guitar" 8 \relative c {
   \gridGetCellMusic "guitar" 5
 }
+
+\gridPutMusic "guitar" 9 \relative c {
+    R1
+}

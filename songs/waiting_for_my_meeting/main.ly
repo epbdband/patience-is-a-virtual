@@ -79,8 +79,9 @@ pageNumberColor = #(if (defined? 'pageNumberColor) pageNumberColor black)
 
 \templateInit
 #'("meta" "guitar" "drums up" "drums down")
-#'(16 16 8 16 16 8 16 16)
+#'(16 16 8 16 16 8 16 16 1)
 
+%% TODO
 %% \include "parts/lyrics.ily"
 
 \Naptaker

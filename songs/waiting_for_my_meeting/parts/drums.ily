@@ -95,3 +95,11 @@
   bd4 <bd sn> bd8 sn <bd sn> sn |
   bd8 sn <bd sn> sn bd sn <bd sn> \drag sn |
 }
+
+\gridPutMusic "drums up" 9 \drummode {
+  toml4 r r2 |
+}
+
+\gridPutMusic "drums down" 9 \drummode {
+  bd4 s s2 |
+}
