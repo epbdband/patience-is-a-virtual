@@ -1,4 +1,5 @@
 \gridPutMusic "drums up" 1 \drummode {
+  \set Staff.instrumentName = "PD"
   R1 |
   r2 s2 |
   R1 |

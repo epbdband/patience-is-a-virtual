@@ -1,4 +1,5 @@
 \gridPutMusic "guitar" 1 \relative c {
+  \set Staff.instrumentName = "EB"
   \Key
   \repeat unfold 2 {
     \include "notes/guitar-I.ily"

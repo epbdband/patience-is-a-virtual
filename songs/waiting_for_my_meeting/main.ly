@@ -27,10 +27,11 @@ global = { \Tempo \defaultTimeSignature \time 4/4 }
 
 \header {
   title     = \markup \fontsize #6 { "Waiting for My Meeting" }
+  %% subtitle  = "for Peng"
   opus      = "Patience is a Virtual EP"
   composer  = "EPBD"
-  poet      = "Preston Y. Drum"
-  %% arranger  = "EPBD"
+  poet      = "PD"
+  arranger  = "EPBD"
   copyright = "© 2018 EPBD"
 }
 
@@ -77,7 +78,7 @@ pageNumberColor = #(if (defined? 'pageNumberColor) pageNumberColor black)
 %%% =================================================================== [ Grid ]
 
 \templateInit
-#'("meta" "guitar" "bass" "drums up" "drums down")
+#'("meta" "guitar" "drums up" "drums down")
 #'(16 16 8 16 16 8 16 16)
 
 %% \include "parts/lyrics.ily"
