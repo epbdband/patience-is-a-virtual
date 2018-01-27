@@ -24,12 +24,12 @@
 }
 
 \gridPutMusic "meta" 6 {
-  s1*8 \break
+  s1*8 \pageBreak
 }
 
 \gridPutMusic "meta" 7 {
   s1*8 \break
-  s1*8 \pageBreak
+  s1*8 \break
 }
 
 \gridPutMusic "meta" 8 {
