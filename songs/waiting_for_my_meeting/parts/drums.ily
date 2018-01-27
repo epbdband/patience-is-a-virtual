@@ -31,7 +31,7 @@
 }
 
 \gridPutMusic "drums up" 2 \drummode {
-  \repeat unfold 2 {
+  \repeat volta 2 {
     \repeat unfold 7 {
       hhho4 4 4 4 |
     }
@@ -43,10 +43,14 @@
 }
 
 \gridPutMusic "drums down" 2 \drummode {
-  \repeat unfold 2 {
-    \repeat unfold 8 {
+  \repeat volta 2 {
+    \repeat unfold 7 {
       bd4 <bd sn> bd <bd sn> |
     }
+  }
+  \alternative {
+    { bd4 <bd sn> bd <bd sn> | }
+    { bd4 <bd sn> bd <bd sn> | }
   }
 }
 
@@ -64,15 +68,9 @@
 
 \gridPutMusic "drums down" 3 \drummode {
   \slurUp
-  bd4 \drag sn8 bd4 \drag sn8 bd4 |
-  bd4 sn8 bd4 sn8 bd4 |
-  bd4 sn8 bd4 \drag sn8 bd8 \drag sn |
-  bd8 sn <bd sn>4 bd bd |
-
-  bd4 sn8 bd4 sn8 bd4 |
-  bd4 sn8 bd4 \drag sn8 bd4 |
-  bd4 sn8 bd4 \drag sn8 bd8 sn |
-  bd8 sn <bd sn>4 bd bd |
+  \repeat unfold 2 {
+    \include "notes/drums_down-III.ily"
+  }
 }
 
 \gridPutMusic "drums up" 4 \drummode {
@@ -118,12 +116,14 @@
 
 
 \gridPutMusic "drums up" 5 \drummode {
-  cymc1 |
-  s1*15 |
+  \repeat volta 2 {
+    \parenthesize cymc1 |
+    s1*7
+  }
 }
 
 \gridPutMusic "drums down" 5 \drummode {
-  \repeat unfold 2 {
+  \repeat volta 2 {
     \repeat unfold 8 {
       \repeat unfold 2 { bd4 <bd sn> } |
     }
@@ -139,8 +139,10 @@
   }
 }
 
-\gridPutMusic "drums down" 6 {
-  \gridGetCellMusic "drums down" 3
+\gridPutMusic "drums down" 6 \drummode {
+  \repeat unfold 2 {
+    \include "notes/drums_down-III.ily"
+  }
 }
 
 \gridPutMusic "drums up" 7 \drummode {
@@ -186,18 +188,28 @@
 }
 
 \gridPutMusic "drums up" 8 \drummode {
-  \repeat unfold 15 {
-    cymr4 4 4 4 |
+  \repeat volta 2 {
+    \repeat unfold 7 {
+      cymr4 4 4 4 |
+    }
   }
-  cymr4 s tomh8 tomh toml toml |
+  \alternative {
+    { cymr4 4 4 4 | }
+    { cymr4 s tomh8 tomh toml toml | }
+  }
   \override Rest.staff-position = #0
 }
 
 \gridPutMusic "drums down" 8 \drummode {
-  \repeat unfold 15 {
-    bd4 <bd sn> bd <bd sn> |
+  \repeat volta 2 {
+    \repeat unfold 7 {
+      bd4 <bd sn> bd <bd sn> |
+    }
   }
-  bd4 \drag <bd sn>8 sn bd4 bd |
+  \alternative {
+    { bd4 <bd sn> bd <bd sn> | }
+    { bd4 \drag <bd sn>8 sn bd4 bd | }
+  }
 }
 
 \gridPutMusic "drums up" 9 \drummode {

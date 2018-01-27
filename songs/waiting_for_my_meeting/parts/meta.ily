@@ -5,8 +5,7 @@
 }
 
 \gridPutMusic "meta" 2 {
-  s1*8 \break
-  s1*8 \pageBreak
+  s1*9 \pageBreak
 }
 
 \gridPutMusic "meta" 3 {
@@ -19,8 +18,10 @@
 }
 
 \gridPutMusic "meta" 5 {
-  s1*8 \break
-  s1*8 \break
+  \repeat volta 2 {
+    s1*8
+  }
+  \break
 }
 
 \gridPutMusic "meta" 6 {
@@ -33,8 +34,13 @@
 }
 
 \gridPutMusic "meta" 8 {
-  s1*8 \break
-  s1*8 \noBreak
+  \repeat volta 2 {
+    s1*7
+  }
+  \alternative {
+    { s1 }
+    { s1 }
+  }
 }
 
 \gridPutMusic "meta" 9 {
