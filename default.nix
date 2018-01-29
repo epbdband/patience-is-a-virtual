@@ -13,6 +13,13 @@ with pkgs.lib;
 let
   version = builtins.readFile ./VERSION;
 
+  projectMeta = with stdenv.lib; {
+    description = "Scores for EPBD's Patience is a Virtual EP";
+    homepage = https://github.com/yurrriq/epbd-patience-is-a-virtual-ep;
+    maintainers = with maintainers; [ yurrriq ];
+    inherit (lilypond.meta) platforms;
+  };
+
   lilypond-with-improviso = lilypond-with-fonts.override {
     fonts = with openlilylib-fonts; [ improviso ];
   };
@@ -48,7 +55,13 @@ let
         );
       '';
 
-      # TODO: meta
+      meta = projectMeta // rec {
+        description = "Main score for ${songName}";
+        longDescription = ''
+          ${description} from EPBD's Patience is a Virtual EP.
+        '';
+        homepage = "${meta.homepage}/blob/master/songs/${songName}";
+      };
     });
 
   songs = rec {
@@ -95,7 +108,7 @@ let
           engravedScores}
     '';
 
-    # TODO: meta
+    meta = projectMeta;
   };
 in
 
