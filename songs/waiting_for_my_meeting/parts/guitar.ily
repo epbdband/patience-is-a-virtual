@@ -1,30 +1,37 @@
 \gridPutMusic "guitar" 5 \relative c {
-  \repeat volta 2 {
-    \include "notes/guitar-I.ily"
-    R1
+  \repeat volta 6 {
+    <aes es' aes c>8 q q q q q q q |
+    <aes es' aes c>8 q r4
+  }
+  \alternative {
+    { <a'' cis>8 r q r }
+    { <c ees>8 r r4 }
+    { <a cis>8 r <g b> r
+      <aes,, es' aes c>8 q q q q q q r |
+      R1 | }
   }
 }
 
 \gridPutMusic "guitar" 1 \relative c {
   \set Staff.instrumentName = "EB"
   \Key
-  \repeat unfold 2 {
-    \include "notes/guitar-I.ily"
-    R1
-  }
+  \gridGetCellMusic "guitar" 5
 }
 
 \gridPutMusic "guitar" 2 \relative c {
-  \repeat volta 2 {
-    \repeat unfold 2 {
-      \include "notes/guitar-IIa.ily"
-    }
-    \include "notes/guitar-IIb.ily"
-    \include "notes/guitar-IIc.ily"
+  \repeat volta 6 {
+    <aes es' aes c>8 q q q q r
   }
   \alternative {
-    { \include "notes/guitar-IId.ily" }
-    { \include "notes/guitar-IId.ily" }
+    { <c g' c e>8 r |
+      <des aes' des f>8 q q r <a e' a cis> q q r | }
+    { <c g' c e>8 q |
+      <des aes' des f>8 q <bes f' bes d> q <ces ges' ces es> q <es bes' es g> q | }
+    { <c g' c e>8 r |
+      <des aes' des f>8 q q r <a e' a cis> q q r |
+      <aes es' aes c>8 q q r q q q r |
+      <aes es' aes c>8 r r4 r2 |
+    }
   }
 }
 
@@ -47,8 +54,15 @@
 }
 
 \gridPutMusic "guitar" 6 \relative c {
-  \include "notes/guitar-IIIa.ily"
-  \include "notes/guitar-IIIc.ily"
+  \repeat volta 4 {
+    <c' es aes>8 q q r <cis e a> r <b d g> r |
+  }
+  \alternative {
+    { <c es aes>8 q q q <b d g> r <cis e a> r  | }
+    { <c es aes>8 r r4 r2 | }
+    { <c es aes>8 q <b d g> q <bes des ges> q <cis e a> q | }
+    { <c es aes>8 r r4 r2 | }
+  }
 }
 
 \gridPutMusic "guitar" 7 \relative c {
