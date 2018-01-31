@@ -12,7 +12,7 @@
 
 \useLibrary Naptaker
 
-\setOption naptaker.staff-size #15
+\setOption naptaker.staff-size #13
 
 \setOption naptaker.extra-layout \layout {
   \omit Score.FretBoard
@@ -78,11 +78,10 @@ pageNumberColor = #(if (defined? 'pageNumberColor) pageNumberColor black)
 %%% =================================================================== [ Grid ]
 
 \templateInit
-#'("meta" "guitar" "drums up" "drums down")
+#'("meta" "vox" "guitar" "drums up" "drums down")
 #'(5 (13 . 2) 6 8 5 5 16 9 1)
 
-%% TODO
-%% \include "parts/lyrics.ily"
+\include "parts/lyrics.ily"
 
 \Naptaker
 

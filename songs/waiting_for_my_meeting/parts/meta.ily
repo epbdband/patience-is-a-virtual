@@ -7,21 +7,20 @@
   s2 |
   \set Score.repeatCommands = #'((volta "2, 5"))
   s2 |
-    \set Score.repeatCommands = #'((volta #f) (volta "3, 6") end-repeat)
+  \set Score.repeatCommands = #'((volta #f) (volta "3, 6") end-repeat)
   s2 |
   \set Timing.measureLength = #(ly:make-moment 4/4)
   s1*2
   \bar ":|."
-  \break
 }
 
 \gridPutMusic "meta" 1 {
   \global
   \gridGetCellMusic "meta" 5
+  \break
 }
 
 \gridPutMusic "meta" 2 {
-  \mark 2
   \partial 2.
   \set Score.repeatCommands = #'(start-repeat)
   s2. |
@@ -63,8 +62,10 @@
 }
 
 \gridPutMusic "meta" 6 {
+  \pageBreak
   \mark 6
-  s1*5 \break
+  s1*5
+  \break
 }
 
 \gridPutMusic "meta" 7 {
@@ -82,6 +83,7 @@
     { s1 }
     { s1 }
   }
+  \break
 }
 
 \gridPutMusic "meta" 9 {
