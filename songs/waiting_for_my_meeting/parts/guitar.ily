@@ -36,8 +36,16 @@
 }
 
 \gridPutMusic "guitar" 3 \relative c {
-  \include "notes/guitar-IIIa.ily"
-  \include "notes/guitar-IIIb.ily"
+  \repeat volta 3 {
+    <c' es aes>8 q q r <cis e a> r <b d g> r |
+  }
+  \alternative {
+    { <c es aes>8 q q q <b d g> r <cis e a> r  | }
+    { <c es aes>8 r r4 r2 | }
+    { <c es aes>8\( q <b d g> q <bes des ges> q <cis e a> q\) |
+      <c es aes>8 q q r <b d g> r <cis e a> r |
+      <c es aes>8 r r4 r2 | }
+  }
 }
 
 \gridPutMusic "guitar" 4 \relative c {

@@ -45,8 +45,16 @@
 }
 
 \gridPutMusic "meta" 3 {
-  \mark 3
-  s1*8 \break
+  \repeat volta 3 {
+    s1 |
+  }
+  \alternative {
+    { s1 | }
+    { s1 | }
+    { s1*3 | }
+  }
+  \bar "||"
+  \pageBreak
 }
 
 \gridPutMusic "meta" 4 {

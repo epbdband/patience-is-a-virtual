@@ -71,6 +71,7 @@
   >>
 }
 
+
 \gridPutMusic "drums up" 2 \drummode {
   \repeat volta 6 {
     hhho4 4 4
@@ -106,24 +107,35 @@
   }
 }
 
+
 \gridPutMusic "drums up" 3 \drummode {
-  \repeat unfold 2 {
-    cymc4. hh hh4 |
-    hh4. hh hh4 |
-    hh4. hh hh4 |
+  \revert Rest.staff-position
+  \repeat volta 3 {
+    <hh \parenthesize cymc>4 r8 hh4 r8 hh4 |
   }
   \alternative {
-    { hh8 s4 hh8 8 8 8 8 | }
-    { hh8 s4 cb 8 8 8 8 8 | }
+    { hh4 r8 hh4 r8 hh4 | }
+    { hh4 r8 hh8 hh hh hh hh | }
+    { hh4 r8 hh4 r8 hh4 |
+      hh4 r8 hh4 r8 hh4 |
+      hh4 r8 cb cb cb cb cb | }
   }
 }
 
 \gridPutMusic "drums down" 3 \drummode {
   \slurUp
-  \repeat unfold 2 {
-    \include "notes/drums_down-III.ily"
+  \repeat volta 3 {
+    bd4 sn8 bd4 \drag sn8 bd \parenthesize sn |
+  }
+  \alternative {
+    { bd4 sn8 bd4 \drag sn8 bd4 | }
+    { bd8 sn <bd sn>8 r8 bd4 bd | }
+    { bd4 sn8 bd4 \drag sn8 bd4 |
+      bd4 sn8 bd4 \drag sn8 bd8 \drag sn |
+      bd8 sn <bd sn> r bd4 bd | }
   }
 }
+
 
 \gridPutMusic "drums up" 4 \drummode {
   cymc4. hhho hhho4 |
@@ -190,6 +202,7 @@
   }
 }
 
+
 \gridPutMusic "drums up" 6 \drummode {
   \repeat volta 4 {
     <hhho \parenthesize cymc>4. hhho hhho4 |
@@ -213,6 +226,7 @@
     { bd8 sn <bd sn>4 bd bd | }
   }
 }
+
 
 \gridPutMusic "drums up" 7 \drummode {
   cymc4. hhho hhho4 |
@@ -256,6 +270,7 @@
   <bd toml>8 sn <bd sn> sn <bd sn> sn <bd sn> sn |
 }
 
+
 \gridPutMusic "drums up" 8 \drummode {
   \repeat volta 2 {
     \repeat unfold 7 {
@@ -280,6 +295,7 @@
     { bd4 \drag <bd sn>8 sn bd4 bd | }
   }
 }
+
 
 \gridPutMusic "drums up" 9 \drummode {
   toml4 r r2 |

@@ -79,7 +79,7 @@ pageNumberColor = #(if (defined? 'pageNumberColor) pageNumberColor black)
 
 \templateInit
 #'("meta" "guitar" "drums up" "drums down")
-#'(5 (13 . 2) 8 16 5 5 16 9 1)
+#'(5 (13 . 2) 6 16 5 5 16 9 1)
 
 %% TODO
 %% \include "parts/lyrics.ily"
