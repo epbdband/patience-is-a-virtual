@@ -49,7 +49,7 @@
 }
 
 \gridPutMusic "guitar" 4 \relative c {
-  \repeat unfold 2 {
+  \repeat volta 2 {
     \repeat unfold 2 {
       \include "notes/guitar-IIa.ily"
     }
@@ -74,7 +74,16 @@
 }
 
 \gridPutMusic "guitar" 7 \relative c {
-  \gridGetCellMusic "guitar" 4
+  \repeat unfold 2 {
+    \repeat unfold 2 {
+      \include "notes/guitar-IIa.ily"
+    }
+    \alternative {
+      { \include "notes/guitar-IIb.ily" }
+      { \include "notes/guitar-IIc.ily"
+        \include "notes/guitar-IId.ily" }
+    }
+  }
 }
 
 \gridPutMusic "guitar" 8 \relative c {

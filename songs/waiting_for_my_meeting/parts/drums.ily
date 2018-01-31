@@ -147,35 +147,50 @@
   hhho4 4 4 4 |
   hhho4 4 4 4 |
   hhho4 s tomh8 tomh toml toml |
-
-  \repeat unfold 2 {
-    cymr1 |
-    s1*3 |
-  }
 }
 
 \gridPutMusic "drums down" 4 \drummode {
-  bd4 \drag sn8 bd4 sn8 bd4 |
-  bd4 \drag sn8 bd4 sn8 bd4 |
-  bd4 \drag sn8 bd4 \drag sn8 bd8 sn |
-  bd8 sn <bd sn> sn <bd sn> sn <bd sn> sn |
+  <<
+    {
+      bd4 \drag sn8 bd4 sn8 bd4 |
+      bd4 \drag sn8 bd4 sn8 bd4 |
+      bd4 \drag sn8 bd4 \drag sn8 bd8 sn |
+      bd8 sn <bd sn> sn <bd sn> sn <bd sn> sn |
 
-  \repeat unfold 3 {
-    bd4 <bd sn> bd <bd sn> |
-  }
-  bd4 \drag <bd sn>8 sn bd4 bd |
+      \repeat unfold 3 {
+        bd4 <bd sn> bd <bd sn> |
+      }
+      bd4 \drag <bd sn>8 sn bd4 bd |
+    }
+    \new DrumStaff \with {
+      \remove "Time_signature_engraver"
+      drumStyleTable = #preston-drums
+      firstClef = ##f
+    } {
+      <<
+        \new DrumVoice {
+          \voiceOne
+          \repeat unfold 2 {
+            cymr1 |
+            s1*3 |
+          }
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd4 <bd toml sn> <bd toml> <bd toml sn> |
+          <bd toml>4 <bd toml sn> <bd toml> <bd toml sn> |
+          <bd toml>4 <bd toml sn> <bd toml> <bd toml sn> |
+          <bd toml>4 \drag <bd sn>8 sn <bd toml> \drag sn <bd sn> sn |
 
 
-  bd4 <bd toml sn> <bd toml> <bd toml sn> |
-  <bd toml>4 <bd toml sn> <bd toml> <bd toml sn> |
-  <bd toml>4 <bd toml sn> <bd toml> <bd toml sn> |
-  <bd toml>4 \drag <bd sn>8 sn <bd toml> \drag sn <bd sn> sn |
-
-
-  bd4 <bd toml sn> <bd toml> <bd toml sn> |
-  <bd toml>4 <bd toml sn> <bd toml> <bd toml sn> |
-  <bd toml>4 <bd toml sn> <bd toml>8 sn <bd sn> sn |
-  <bd toml>8 sn <bd sn> sn <bd toml> sn <bd sn> \drag sn |
+          bd4 <bd toml sn> <bd toml> <bd toml sn> |
+          <bd toml>4 <bd toml sn> <bd toml> <bd toml sn> |
+          <bd toml>4 <bd toml sn> <bd toml>8 sn <bd sn> sn |
+          <bd toml>8 sn <bd sn> sn <bd toml> sn <bd sn> \drag sn |
+        }
+      >>
+    }
+  >>
 }
 
 

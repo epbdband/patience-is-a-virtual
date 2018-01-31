@@ -58,9 +58,8 @@
 }
 
 \gridPutMusic "meta" 4 {
-  \mark 4
   s1*8 \break
-  s1*8 \break
+  \mark 5
 }
 
 \gridPutMusic "meta" 6 {
