@@ -1,6 +1,7 @@
-songs := $(wildcard songs/*)
+loglevel ?= info
+prefix ?= docs
 
+.PHONY: all
 all:
-	@ nix-build
-	@ mkdir -p docs
-	@ cp -f result/*.pdf docs/
+	@ find -L $$(nix-build --argstr loglevel ${loglevel} --no-out-link) -maxdepth 1 -type f | \
+		xargs install -m644 -Dt ${prefix}
