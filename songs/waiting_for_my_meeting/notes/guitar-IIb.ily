@@ -1,2 +1,2 @@
-<aes es' aes c>8 q q q q q <c g' c e> q |
-<des aes' des f>8 q <bes f' bes d> q <ces ges' ces es> q <es bes' es g> q |
+<aes es' aes c>4:8 q:8 q:8 <c g' c e>:8 |
+<des aes' des f>4:8 <bes f' bes d>:8 <ces ges' ces es>:8 <es bes' es g>:8 |

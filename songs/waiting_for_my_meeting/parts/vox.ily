@@ -24,38 +24,38 @@
 
 %%% ============================================================ [ Verse Music ]
 
-\gridPutMusic "vox" 2
-\with {
-  lyrics = \lyricmode { }
-  music = {
-    \new Voice = "verseOne" \relative {
-      \improvisationOn
-      \set melismaBusyProperties = #'()
-      \slurDashed
-      \phrasingSlurDotted
-      \partial 2.
-      \repeat volta 6 {
-        \parenthesize d8( d) \parenthesize d4 r4
-      }
-      \alternative {
-        { \set Timing.measureLength = #(ly:make-moment 1/4)
-          r4 |
-          \set Timing.measureLength = #(ly:make-moment 4/4)
-          R1 | }
-        { \set Timing.measureLength = #(ly:make-moment 1/4)
-          d8 d( |
-          \set Timing.measureLength = #(ly:make-moment 4/4)
-          d4) d4( d8 d) d4 | }
-        { \set Timing.measureLength = #(ly:make-moment 1/4)
-          r4 |
-          \set Timing.measureLength = #(ly:make-moment 4/4)
-          R1 |
-          R1 |
-          \parenthesize { d8 d d d } d d4 d8 | }
-      }
-    }
-  }
-}
+%% \gridPutMusic "vox" 2
+%% \with {
+%%   lyrics = \lyricmode { }
+%%   music = {
+%%     \new Voice = "verseOne" \relative {
+%%       \improvisationOn
+%%       \set melismaBusyProperties = #'()
+%%       \slurDashed
+%%       \phrasingSlurDotted
+%%       \partial 2.
+%%       \repeat volta 6 {
+%%         \parenthesize d8( d) \parenthesize d4 r4
+%%       }
+%%       \alternative {
+%%         { \set Timing.measureLength = #(ly:make-moment 1/4)
+%%           r4 |
+%%           \set Timing.measureLength = #(ly:make-moment 4/4)
+%%           R1 | }
+%%         { \set Timing.measureLength = #(ly:make-moment 1/4)
+%%           d8 d( |
+%%           \set Timing.measureLength = #(ly:make-moment 4/4)
+%%           d4) d4( d8 d) d4 | }
+%%         { \set Timing.measureLength = #(ly:make-moment 1/4)
+%%           r4 |
+%%           \set Timing.measureLength = #(ly:make-moment 4/4)
+%%           R1 |
+%%           R1 |
+%%           \parenthesize { d8 d d d } d d4 d8 | }
+%%       }
+%%     }
+%%   }
+%% }
 
 \gridPutMusic "vox" 3
 \with {

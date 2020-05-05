@@ -1,10 +1,10 @@
-\repeat unfold 3 {
-  <aes es' aes c>8 q q q q q q q |
+\repeat volta 3 {
+  <aes es' aes c>4:8 q:8 q:8 q:8 |
 }
 \alternative {
-  { <aes es' aes c>8 q r4 <a'' cis>8 r q r | }
-  { <aes,, es' aes c>8 q r4 <c'' ees>8 r r4 | }
-  { <aes,, es' aes c>8 q r4 <a'' cis>8 r <g b> r | }
+  { <aes es' aes c>4:8 r <a'' cis>8-^ r q-^ r | }
+  { <aes,, es' aes c>4:8 r <c'' ees>4-^ r | }
+  { <aes,, es' aes c>4:8 r <a'' cis>8-^ r <g b>-^ r | }
 }
-
-<aes,, es' aes c>8 q q q q q q r |
+\repeat unfold 3 { <aes,, es' aes c>4:8 } q8-^ r |
+R1 |
