@@ -7,14 +7,15 @@ pkgs.mkShell {
       gnumake
       lilypond-with-improviso
       niv
+      nixpkgs-fmt
       python3
       qpdfview
-      # timidity
+      timidity
     ]
   ) ++ (
     with python3Packages; [
       pre-commit
-      # pywatchman
+      pywatchman
       yamllint
     ]
   );
