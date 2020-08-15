@@ -1,4 +1,28 @@
 {
+    "breaks": {
+        "branch": "master",
+        "description": "A utitlity package to maintain break sets",
+        "homepage": null,
+        "owner": "openlilylib",
+        "repo": "breaks",
+        "rev": "1bbfc02e2e7337f03edbd7304707f172196cee9f",
+        "sha256": "0h8ngwxdimy60spc7azx5brs24mz7c8n5qmr9rr1yyzaylrvr8wj",
+        "type": "tarball",
+        "url": "https://github.com/openlilylib/breaks/archive/1bbfc02e2e7337f03edbd7304707f172196cee9f.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "edition-engraver": {
+        "branch": "master",
+        "description": "Apply tweaks to LilyPond",
+        "homepage": null,
+        "owner": "openlilylib",
+        "repo": "edition-engraver",
+        "rev": "43a0f0ab10cf817522ce56275ca8ca5e15b606af",
+        "sha256": "021gjg8x9ax5k2bbh1pkx157xw749yxlza0hp9ym0hz14c2d7m4v",
+        "type": "tarball",
+        "url": "https://github.com/openlilylib/edition-engraver/archive/43a0f0ab10cf817522ce56275ca8ca5e15b606af.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "gridly": {
         "branch": "master",
         "description": null,
@@ -9,6 +33,18 @@
         "sha256": "11zs76zhk8czlx1nfpirmv1iiv5bdsd5z367qjp7pmz3g28hbmqf",
         "type": "tarball",
         "url": "https://github.com/openlilylib/gridly/archive/baa175b9c5cc3ff038d266610a0e3dd371d21e71.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "lalily-templates": {
+        "branch": "master",
+        "description": null,
+        "homepage": null,
+        "owner": "openlilylib",
+        "repo": "lalily-templates",
+        "rev": "c63422bff0490f6c8d2c8366105b787c724bc582",
+        "sha256": "1zbgscx4dhmzyznsbjqms578va606c3hk9sjg07z05zyl47wms79",
+        "type": "tarball",
+        "url": "https://github.com/openlilylib/lalily-templates/archive/c63422bff0490f6c8d2c8366105b787c724bc582.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "naptaker": {
@@ -57,6 +93,18 @@
         "sha256": "0lhsdmdxk7g7rpdjv88xr40klnwv6j5brqzkxl0qp5bs4b3aimdz",
         "type": "tarball",
         "url": "https://github.com/openlilylib/oll-core/archive/f7cba00fde1311f129e6dbde4d93186362bc6cab.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "page-layout": {
+        "branch": "master",
+        "description": "Functions to enhance and simplify working with page layout in LilyPond",
+        "homepage": null,
+        "owner": "openlilylib",
+        "repo": "page-layout",
+        "rev": "fba3ecb293ffa67b33752a27037c8ba758129831",
+        "sha256": "13kp21cg3i0jz7wwimfdwnpz68wjb45x4h18qd8gkfl1by72grcb",
+        "type": "tarball",
+        "url": "https://github.com/openlilylib/page-layout/archive/fba3ecb293ffa67b33752a27037c8ba758129831.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

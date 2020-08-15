@@ -2,7 +2,7 @@ self: super: rec {
 
   inherit (import (import ./sources.nix).niv { pkgs = super; }) niv;
 
-  inherit (import ./sources.nix) gridly naptaker oll-core;
+  inherit (import ./sources.nix) breaks edition-engraver gridly lalily-templates naptaker oll-core page-layout;
 
   lilypond-unstable = super.callPackage ./lilypond/unstable.nix {
     inherit (super) lilypond;
