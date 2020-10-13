@@ -17,10 +17,10 @@
         "homepage": null,
         "owner": "openlilylib",
         "repo": "edition-engraver",
-        "rev": "43a0f0ab10cf817522ce56275ca8ca5e15b606af",
-        "sha256": "021gjg8x9ax5k2bbh1pkx157xw749yxlza0hp9ym0hz14c2d7m4v",
+        "rev": "dd640afd9dbbc420fc4f27aa275c8fc83f64735c",
+        "sha256": "00gljyyvlxf4s321dljk3zv4yn9556gz1s5mmdskpah89chw6gz6",
         "type": "tarball",
-        "url": "https://github.com/openlilylib/edition-engraver/archive/43a0f0ab10cf817522ce56275ca8ca5e15b606af.tar.gz",
+        "url": "https://github.com/openlilylib/edition-engraver/archive/dd640afd9dbbc420fc4f27aa275c8fc83f64735c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "gridly": {
@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "openlilylib",
         "repo": "lalily-templates",
-        "rev": "c63422bff0490f6c8d2c8366105b787c724bc582",
-        "sha256": "1zbgscx4dhmzyznsbjqms578va606c3hk9sjg07z05zyl47wms79",
+        "rev": "c93e2e3a7056aed05a08cf1e51192579219cd2d0",
+        "sha256": "0y22kj86s82ch85gvb5fwkg93nzjw94yv409i7zwc8aplzlirilh",
         "type": "tarball",
-        "url": "https://github.com/openlilylib/lalily-templates/archive/c63422bff0490f6c8d2c8366105b787c724bc582.tar.gz",
+        "url": "https://github.com/openlilylib/lalily-templates/archive/c93e2e3a7056aed05a08cf1e51192579219cd2d0.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "naptaker": {
@@ -65,22 +65,22 @@
         "homepage": "https://github.com/nmattia/niv",
         "owner": "nmattia",
         "repo": "niv",
-        "rev": "303f442c43f918bc43400ab4a0b662a82ca7748b",
-        "sha256": "19z1qypd6zd4qzhrhjm7j55v85fzf8wln8l9vslvn9dpspcwxv7c",
+        "rev": "9d35b9e4837ab88517210b1701127612c260eccf",
+        "sha256": "0q50xhnm8g2yfyakrh0nly4swyygxpi0a8cb9gp65wcakcgvzvdh",
         "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/303f442c43f918bc43400ab4a0b662a82ca7748b.tar.gz",
+        "url": "https://github.com/nmattia/niv/archive/9d35b9e4837ab88517210b1701127612c260eccf.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
-        "branch": "nixos-20.03",
+        "branch": "release-20.03",
         "description": "A read-only mirror of NixOS/nixpkgs tracking the released channels. Send issues and PRs to",
         "homepage": "https://github.com/NixOS/nixpkgs",
         "owner": "NixOS",
-        "repo": "nixpkgs-channels",
-        "rev": "e9bd19d4d352f45e871cfc3e91f854cb76ff48e1",
-        "sha256": "07pwvd45ra4d4xlhb7m5z04faqm2s51w4bk6yl750gy96w6cmnqk",
+        "repo": "nixpkgs",
+        "rev": "53c37f9d804a665609fcb11650bed835ecfe0bac",
+        "sha256": "1nkwc2wsig6ny5lvan8vxs6l4fi4cza21g5jsii371g7akcsq04n",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs-channels/archive/e9bd19d4d352f45e871cfc3e91f854cb76ff48e1.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/53c37f9d804a665609fcb11650bed835ecfe0bac.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "oll-core": {
@@ -89,10 +89,10 @@
         "homepage": "https://www.openlilylib.org",
         "owner": "openlilylib",
         "repo": "oll-core",
-        "rev": "f7cba00fde1311f129e6dbde4d93186362bc6cab",
-        "sha256": "0lhsdmdxk7g7rpdjv88xr40klnwv6j5brqzkxl0qp5bs4b3aimdz",
+        "rev": "73029ae46f1b870f82d1637ef241fb7c3f35ce6b",
+        "sha256": "165v7xmbpm12d8xrwnq63hzr189lg7gz04qd1fkdggvijwx562zj",
         "type": "tarball",
-        "url": "https://github.com/openlilylib/oll-core/archive/f7cba00fde1311f129e6dbde4d93186362bc6cab.tar.gz",
+        "url": "https://github.com/openlilylib/oll-core/archive/73029ae46f1b870f82d1637ef241fb7c3f35ce6b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "page-layout": {
