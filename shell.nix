@@ -2,7 +2,11 @@
 pkgs.mkShell {
   buildInputs = with pkgs; (
     [
-      cargo
+      (
+        frescobaldi.override {
+          lilypond = lilypond-with-improviso;
+        }
+      )
       git
       gnumake
       lilypond-with-improviso
